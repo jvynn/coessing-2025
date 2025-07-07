@@ -1,6 +1,7 @@
 # ignore contents of data repos
 GIS_data/**
 EcoCTD_data/**
+__pycache__
 
 # but keep the folder itself
 !GIS_data/
