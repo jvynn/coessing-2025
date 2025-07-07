@@ -1,0 +1,9 @@
+# ignore contents of data repos
+GIS_data/**
+EcoCTD_data/**
+
+# but keep the folder itself
+!GIS_data/
+!GIS_data/.keep
+!EcoCTD_data/
+!EcoCTD_data/.keep
