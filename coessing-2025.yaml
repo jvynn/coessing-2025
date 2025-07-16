@@ -14,5 +14,10 @@ dependencies:
   - haversine
   - jupyterlab         
   - ipykernel          
-  - pip                
+  - pip 
+  - fsspec
+  - h5netcdf 
+  - h5py               
+  - requests 
+  - aiohttp
 
