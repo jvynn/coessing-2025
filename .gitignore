@@ -2,6 +2,7 @@
 GIS_data/**
 EcoCTD_data/**
 __pycache__
+coessing_2025.ipynb
 
 # but keep the folder itself
 !GIS_data/
