@@ -12,12 +12,14 @@ No installation required! Just click the link below and the repository will laun
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jvynn/coessing-2025/HEAD?urlpath=%2Fdoc%2Ftree%2Fdata_analysis.ipynb)
 
-Note this options requires a stable internet connection.
+Note this option requires a stable internet connection.
 
 
 ## Option 2: Install python and setup the **Conda environment** locally (intermediate)
 
 This method may be preferable if you're familiar with Python and the terminal interface since it gives you the most control. It also more closely aligns with the workflows we commonly use in scientific computing! It requires you to install Anaconda, which includes Python and a package manager in one download.
+
+If you already have Anaconda installed, skip to **Step 2**
 
 ### Step-by-step instructions:
 
@@ -25,9 +27,11 @@ This method may be preferable if you're familiar with Python and the terminal in
 
    Download and install Anaconda for your system:  
    🔗 [https://www.anaconda.com/download](https://www.anaconda.com/download)
+   
+   You can install Miniconda if you prefer - it's a smaller version of the program that includes everything we'll need for this workshop. 
 
-   If you're new you can check out these video walkthroughs:  
-   - [Windows installation](https://www.youtube.com/watch?v=4DQGBQMvwZo&t=606s)  
+   If you're new to command line tools, you can check out these video walkthroughs:  
+   - [Windows installation](https://www.youtube.com/watch?v=4DQGBQMvwZo) (note: I would install GitBash **before** installing Anaconda; make sure you *add to PATH* during installation like she does in the tutorial)  
    - [Mac installation](https://www.youtube.com/watch?v=0Hhqf8L-b_0)
 
 1. **Download the repository**  
@@ -37,36 +41,34 @@ This method may be preferable if you're familiar with Python and the terminal in
      git clone https://github.com/jvynn/coessing-2025.git
      ```
 
-1. **Open a terminal (or Anaconda Prompt)** and navigate to the folder with the environment file.
+1. **Open a terminal** and navigate to the folder where you've downloaded the repository (contains ``environment.yml``).
 
 1. **Create and activate the Conda environment**  
    
-   Run the following commands:
+   Run the following command:
    ```bash
    conda env create -f environment.yml
+   ``` 
+   This may take a few minutes! Once it has completed you will see instructions on how to activate and deactivate the environment. To activate, run:
+   ```bash
    conda activate coessing-2025
    ```
-   You should see your environment change from `(base)` to `(coessing-2025)`
 
-1. **Launch JupyterLab**
+1. **Register your environment as a kernel and launch JupyterLab**
     
     Once the environment is activated, run:
     ```bash
+    python -m ipykernel install --user --name coessing-2025 --display-name "Python (coessing-2025)"
+    ```
+    to register the environment within JupyterLab, and then run:
+    ```bash
     jupyter lab
     ```
-    This will launch the JupyterLab server locally and open your web browser automatically at ``http://localhost:8888/lab``. If it doesn't automatically open, you can paste it in. 
+    This will launch the JupyterLab server locally and open your web browser automatically at ``http://localhost:8888/lab``. If it doesn't automatically open, you can copy and paste one of the urls it spits out (typically ``http://localhost:8888/lab?token=[string of numbers and letters]``). 
 
 1. **Choose the right kernal and open the notebooks** 
 
     Explore the JupyterLab interface - it's takes a moment to get used to but is fairly intuitive! Make sure your notebook is using the correct Python kernel.
     - Look at the top right corner of the notebook (shows the current kernel name).
     - Click the kernel name and choose ``"Python (coessing-2025)"`` if it’s not already selected.
-
-    If the kernel doesn’t appear, register it (see below).
-
-1. **(Optional) Register your Conda environment as a kernel**
-
-    If the ``coessing-2025`` environment is not listed, run the following command once and restart JupyterLab
-    ```bash
-    python -m ipykernel install --user --name coessing-2025 --display-name "Python (coessing-2025)"
-    ```
+    
