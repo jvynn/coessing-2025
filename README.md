@@ -64,7 +64,7 @@ If you already have Anaconda installed, skip to **Step 2**
     ```bash
     jupyter lab
     ```
-    This will launch the JupyterLab server locally and open your web browser automatically at ``http://localhost:8888/lab``. If it doesn't automatically open, you can copy and paste one of the urls it spits out (typically ``http://localhost:8888/lab?token=[string of numbers and letters]``). 
+    This will launch the JupyterLab server locally and open your web browser automatically at ``http://localhost:8888/lab``. If it doesn't automatically open, you can copy and paste one of the URLs it spits out (typically ``http://localhost:8888/lab?token=[string of numbers and letters]``). 
 
 1. **Choose the right kernal and open the notebooks** 
 
