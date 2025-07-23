@@ -36,7 +36,11 @@ If you already have Anaconda installed, skip to **Step 2**
 
 1. **Download the repository**  
    - Either [download the ZIP](https://github.com/jvynn/coessing-2025/archive/refs/heads/main.zip) and unzip it,  
-   - Or clone the repo using Git:
+   - Or install git (if you haven't already) by running:
+     ```bash
+     conda install -c conda-forge git
+     ```
+     and then clone the repo:
      ```bash
      git clone https://github.com/jvynn/coessing-2025.git
      ```
