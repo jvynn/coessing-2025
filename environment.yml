@@ -12,13 +12,14 @@ dependencies:
   - geopandas
   - shapely
   - haversine
-  - jupyterlab         
-  - ipykernel          
-  - pip 
+  - jupyterlab
+  - ipykernel
+  - pip
   - fsspec
-  - h5netcdf 
-  - h5py               
-  - requests 
+  - h5netcdf
+  - h5py
+  - requests
   - aiohttp
   - ipywidgets
+  - pandas
 
